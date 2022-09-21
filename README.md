@@ -2,16 +2,8 @@
 
 #!/bin/bash
 
-password=”pass123”
+for f in $( ls ); do
 
-echo “enter your password”; read input
-
-if [ “$input” == $password ] ; then
-
-     echo “password is correct”
+     echo $f
      
-else
-
-     echo “wrong password entered”
-     
-fi
+done > output.txt
