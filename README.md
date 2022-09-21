@@ -1,9 +1,9 @@
 # lab2
 
 #!/bin/bash
-
-for f in $( ls ); do
-
-     echo $f
-     
-done > output.txt
+args=(“$@”)
+count=0
+while [ $count -lt ${args[0]} ]; do
+     echo “$count”
+     ((count++))
+done
