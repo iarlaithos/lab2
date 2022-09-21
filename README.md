@@ -2,11 +2,16 @@
 
 #!/bin/bash
 
-args=(“$@”)
+password=”pass123”
 
-if [ ${args[0]} -eq ${args[1]} ] ; 
-then
-     echo “variables are the same”
+echo “enter your password”; read input
+
+if [ “$input” == $password ] ; then
+
+     echo “password is correct”
+     
 else
-     echo “variables are not the same”
+
+     echo “wrong password entered”
+     
 fi
